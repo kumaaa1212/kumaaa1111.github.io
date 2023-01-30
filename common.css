@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Yuji Syuku', serif;
+  color: rgb(77, 77, 77);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  background-color: #fff;
+  position:sticky;
+  top: 0;
+  z-index: 1000;
+  height: 60px;
+  width: 100%;
+}
+.mainli{
+  display: none;
+}
+.mainli ul {
+  height: 60px;
+  width: 100%;
+  /* border: 1px red solid; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* display: none; */
+}
+.mainli li {
+  padding: 12px;
+}
+.mainli li:hover {
+  border-bottom: solid black 2px;
+  cursor: pointer;
+}
+
+header a {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: rgb(59, 59, 59);
+  user-select: none;
+}
+
+.subli{
+  height: 60px;
+  width: 100%;
+  /* border: 1px red solid; */
+  display: none;
+}
+.subli #headmenu{
+  display: block;
+  height: 100%;
+  width: 60px;
+  font-size: 60px;
+  line-height: 60px;
+  margin-left:auto ;
+  margin-right:6px;
+  cursor: pointer;
+  user-select: none;
+  opacity: 1;
+}
+.subli #headmenu.hidden{
+  display: none;
+  opacity: 0;
+}
+.subli nav{
+  width: 100%;
+  /* border: 1px red solid; */
+  background-color: rgb(255, 255, 255,0.9);
+  position: fixed;
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+.subli #headclose{
+  display: block;
+  width: 60px;
+  font-size: 60px;
+  line-height: 60px;
+  margin-left:auto ;
+  margin-right:6px;
+  cursor: pointer;
+  user-select: none;
+}
+.subli nav{
+  display: none;
+}
+.subli nav.show{
+  display: block;
+}
+.subli li{
+  width: 100%;
+  height: 30px;
+  text-align: start;
+  font-size: 20px;
+  border-bottom: 1px solid rgb(27, 27, 27,0.3);
+  margin: 0 0 20px 5px;
+  padding-bottom: 3px;
+}
+.subli a{
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+.heroarea {
+  /* border: 1px red solid; */
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+.heroarea img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  animation: slider 4s;
+}
+
+@keyframes slider {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.heroarea p {
+  font-size: 10vw;
+  color: rgb(0, 0, 0,0.8);
+  opacity: 0.9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+/* main */
+main {
+  background-color: rgb(231, 231, 231);
+  padding-bottom: 100px;
+}
+.container{
+  width: calc(100% - 100px);
+  margin: 0 auto;
+}
+@media(min-width: 768px) {
+  .mainli{
+    display:block;
+  }
+}
+@media (max-width: 767px) {
+  .subli{
+  display:block;
+  }
+}
+

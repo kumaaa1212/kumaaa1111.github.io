@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./contact/style.css">
+  <link rel="stylesheet" href="common.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="mainli">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="./news.html">NEWS</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="./online.html">ONLINE SHOP</a></li>
+        <li><a href="./experience.html">陶芸体験</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="subli">
+      <span class="material-icons" id="headmenu">menu</span>
+      <nav id="showmenu">
+        <span class="material-icons" id="headclose">
+          close</span>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="./news.html">NEWS</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="./online.html">ONLINE SHOP</a></li>
+          <li><a href="./experience.html">陶芸体験</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="heroarea">
+      <img src="" alt="" id="mainimg">
+      <p>雄喜苑</p>
+    </div>
+    <div class="container">
+      <section>
+        <h2>INFORMATIOPN</h2>
+        <table>
+          <tr>
+            <td>住所</td>
+            <td>神奈川県足柄下郡箱根町元箱根90-105</td>
+          </tr>
+          <tr>
+            <td>定休日</td>
+            <td>無休</td>
+          </tr>
+          <tr>
+            <td>料金</td>
+            <td>制作体験(標準コース3300円)</td>
+          </tr>
+          <tr>
+            <td>駐車場</td>
+            <td>あり/4台</td>
+          </tr>
+          <tr>
+            <td>アクセス</td>
+            <td>公共交通:箱根登山鉄道箱根湯本駅→箱根登山バス元箱根・箱根町方面行きで40分<br>バス停:箱根神社入口下車、徒歩15分
+              <br>車:西湘バイパス箱根口ICから国道1号経由27分
+            </td>
+          </tr>
+        </table>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.9425115781205!2d139.0272395!3d35.2079009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019988eb4dd9a67%3A0x7b298dd3032d3900!2z44CSMjUwLTA1MjIg56We5aWI5bed55yM6Laz5p-E5LiL6YOh566x5qC555S65YWD566x5qC577yZ77yQ4oiS77yR77yQ77yV!5e0!3m2!1sja!2sjp!4v1674671104141!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <section>
+        <h2>CONTACT</h2>
+        <p class="expla">陶芸体験・作品制作・展示会ご依頼等・オーダーメイドなど、お気軽にお問い合わせください。<br><span>*</span>は必須項目です</p>
+        <form action="" method="post">
+          <div>
+            <label class="checkform">
+              <p>名前<span>*</span>name<br>(ひらがな・カタカナ)</p>
+              <input type="text" class="furigana">
+            </label>
+            <p class="alerttext" id="alartarea"></p>
+          </div>
+          <div>
+            <label class="checkform">
+              <p>メールアドレス<span>*</span>mail</p>
+              <input type="text" class="mailbox">
+            </label>
+            <p class="alertmail" id="alartarea"></p>
+          </div>
+          <div>
+            <label class="checkform">
+              <p>メッセージ<span>*</span>message</p>
+              <input type="text" class="messagebox">
+            </label>
+            <p class="alertmessage" id="alartarea"></p>
+          </div>
+          <a href=""id="submits">送信</a>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>〒250-0522 神奈川県足柄下郡箱根町元箱根90-105</p>
+    <p><a href="tel:0460835004">TEL:0460-83-5004</a></p>
+  </footer>
+  <script src="./contact/contact.js"></script>
+  <script src="common.js"></script>
+</body>
+
+</html>

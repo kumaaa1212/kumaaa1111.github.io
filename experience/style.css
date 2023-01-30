@@ -1,0 +1,148 @@
+/* header */
+.mainli li:nth-child(5) {
+  border-bottom: solid black 2px;
+}
+/* container */
+.container{
+  width: calc(100% - 100px);
+  margin: 0 auto;
+}
+.container h2{
+  margin-top: 30px;
+}
+.container h1{
+  margin: 60px 0;
+  text-align: center;
+}
+.flow{
+  width:calc(100% - 100px);
+  margin:  0 auto;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-bottom: 2px solid rgb(77, 77, 77);
+}
+.step{
+  width: 200px;
+  height: 200px;
+  margin:10px;
+}
+.step p{
+  height: 50px;
+}
+.step img{
+  object-fit: cover;
+  width: 200px;
+  height: 150px;
+  border-radius: 3px;
+}
+.content{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+.content h3{
+  text-align: center;
+  margin-top: 30px;
+}
+.content img{
+width: 300px;
+height: 300px;
+margin: 7px;
+}
+.content P{
+  width:300px ;
+  text-align: center;
+}
+.caution h2{
+  margin-top: 50px;
+}
+.caution{
+  padding-bottom: 80px;
+  border-bottom:2px solid rgb(77, 77, 77);
+}
+/* question */
+.question{
+  padding-bottom:50px;
+  height: 500px;
+}
+.question h2{
+  margin-top: 50px;
+}
+dl{
+  margin: 0;
+}
+dl > div{
+  margin: 60px 0;
+}
+dt{
+  font-size: 20px;
+  padding: 8px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+dt::before{
+  margin-right: -px;
+  content: 'Q';
+}
+dt::after{
+  content: '+';
+  position:absolute;
+  top: 8px;
+  right: 16px;
+  transition: transform .3s;
+}
+dl > div.appear dt::after{
+  transform: rotate(45deg);
+}
+dd{
+  padding: 8px;
+  margin-top: 20px;
+  display: none;
+}
+dd::before{
+  content: 'A';
+}
+dl > div.appear dd{
+  display: block;
+  animation: fadein .3s;
+}
+@keyframes fadein{
+  0%{opacity: 0;
+    transform: translateY(-10px);
+  }
+  100%{
+    opacity: 1;
+    transform: none;
+  }
+}
+/* footer */
+footer{
+  background-color: #fff;
+}
+ footer p{
+  text-align: center;
+  margin: 30px 0;
+}
+
+@media(min-width: 768px) {
+  .mainli{
+    display:block;
+  }
+}
+@media (max-width: 767px) {
+  .subli{
+  display:block;
+  }
+}
+@media (max-width: 600px) {
+  dt{
+  font-size: 16px;
+  }
+}
+
+
+
+
