@@ -15,32 +15,6 @@
   padding-bottom: 40px;
   margin-bottom: 70px;
 }
-
-/* newsborder */
-.newsarea {
-  margin: 2em 0;
-  position: relative;
-  padding: 0.5em 1.5em;
-  border-top: solid 2px black;
-  border-bottom: solid 2px black;
-}
-.newsarea:before,
-.newsarea:after {
-  content: '';
-  position: absolute;
-  top: -10px;
-  width: 2px;
-  height: -webkit-calc(100% + 20px);
-  height: calc(100% + 20px);
-  background-color: black;
-}
-
-.newsarea:before {
-  left: 10px;
-}
-.newsarea:after {
-  right: 10px;
-}
 /* newscontents */
 .newsarea h2 {
   margin-top: 30px;

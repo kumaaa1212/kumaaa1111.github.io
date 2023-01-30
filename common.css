@@ -161,5 +161,16 @@ main {
   .subli{
   display:block;
   }
+  .container{
+    width:calc(100% - 50px);
+    margin: 0 auto;}
 }
-
+@media (max-width: 600px) {
+  .subli{
+  display:block;
+  }
+  .container{
+    border: 3px blue solid;
+    width:100%;
+    margin: 0 auto;}
+}
