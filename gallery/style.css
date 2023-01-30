@@ -116,6 +116,7 @@ footer{
   .mainli{
     display:block;
   }
+
 }
 @media (max-width: 767px) {
   .subli{
@@ -135,7 +136,10 @@ footer{
   .area2, .area3 p{
     text-align: center;
   }
- 
+  .imgarea-1 img{
+    width: 20vw;
+    height: 15vh;
+  }
   .imgarea-2 img{
     object-fit: cover;
     width: 50vw;
