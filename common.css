@@ -171,7 +171,6 @@ main {
   display:block;
   }
   .container{
-    border: 3px blue solid;
     width:calc(100% - 20px);
     margin: 0 auto;}
 }

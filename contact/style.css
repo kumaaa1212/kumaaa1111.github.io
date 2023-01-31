@@ -117,15 +117,7 @@ footer{
   margin: 30px 0;
 }
 
-@media(min-width: 768px) {
-  .mainli{
-    display:block;
-  }
-}
 @media (max-width: 767px) {
-  .subli{
-  display:block;
-  }
 .checkform{
   display: block;
   margin: 0px auto;
@@ -141,4 +133,5 @@ form a
 {margin: 150px auto;
 }
 }
+
 

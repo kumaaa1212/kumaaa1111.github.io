@@ -62,14 +62,3 @@ footer p {
   text-align: center;
   margin: 30px 0;
 }
-
-@media(min-width: 768px) {
-  .mainli{
-    display:block;
-  }
-}
-@media (max-width: 767px) {
-  .subli{
-  display:block;
-  }
-}

@@ -25,10 +25,21 @@
   padding-bottom: 20px;
   text-align: center;
 }
-section{
-  /* border: 1px red solid; */
+section img{
+  display: block;
+  width:  600px;
+  height: 400px;
+  margin: 0 auto;
+  object-fit: cover;
 }
-section img {
+section .dogimg{
+  display: block;
+  width:  600px;
+  height: 600px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+section .seasonimg {
   display: block;
   width:  600px;
   height: 400px;
@@ -104,10 +115,26 @@ footer p {
     width: 400px;
     height: 300px;
   }
+  section .dogimg{
+    width: 400px;
+    height: 400px;
+}
+  section .seasonimg{
+    width: 400px;
+    height: 300px;
+  }
 }
 @media (max-width: 600px) {
  section img{
   width: 300px;
   height: 200px;
  }
+ section .dogimg{
+  width: 300px;
+  height: 300px;
+}
+section .seasonimg{
+  width: 300px;
+  height: 200px;
+}
 }
