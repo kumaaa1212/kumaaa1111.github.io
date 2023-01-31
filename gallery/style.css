@@ -52,8 +52,8 @@ main{
 .imgarea-1 img{
   margin: 5px;
   object-fit: cover;
-  width: 25vw;
-  height:25vh;
+  width: 300px;
+  height:300px;
 }
 .gallery-area2{
   display: flex;
@@ -81,11 +81,11 @@ border-bottom: 2px solid rgb(77, 77, 77);
 section:last-of-type{
   border-bottom: none;
 }
-.imgaa-3 {
+.imgarea-3 {
   display: flex;
   flex-wrap: wrap;
 }
-.imgaa-3 img {
+.imgarea-3 img {
   display: block;
   object-fit: cover;
   margin: 0 auto;
@@ -97,7 +97,7 @@ section:last-of-type{
   box-shadow: 0 0 5px rgb(19, 19, 19);
   border-radius: 2px;
 }
-.imgaa-3 img.show {
+.imgarea-3 img.show {
   transform: translateY(0px);
   transition: all 2s;
   opacity: 1;
@@ -119,9 +119,6 @@ footer{
 
 }
 @media (max-width: 767px) {
-  .subli{
-  display:block;
-  }
   .imgarea{
     width:100%;
   }
@@ -137,8 +134,8 @@ footer{
     text-align: center;
   }
   .imgarea-1 img{
-    width: 20vw;
-    height: 15vh;
+    width: 200px;
+    height: 200px;
   }
   .imgarea-2 img{
     object-fit: cover;
@@ -149,26 +146,26 @@ footer{
   }
 }
 @media(max-width: 600px) {
-
   .imgarea-1{
+    border: 1px green solid;
     width: calc(100% - 50px);
     margin:  0 auto;
   }
   .imgarea-1 img{
     display: block;
-    width: 60vw;
-    height: 40vh;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
   }
-  .imgaa-3{
+  .imgarea-3{
     display: block;
   }
-  .imgaa-3 img{
+  .imgarea-3 img{
     margin-top: 5px;
     width: 70%;
     height: 100%;
   }
-}
+} 
 
 
 
