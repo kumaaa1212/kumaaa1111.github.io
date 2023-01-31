@@ -11,14 +11,16 @@
   margin-top: 30px;
 }
 .container h2:nth-child(2) {
+  text-align: center;
   border-bottom: 2px solid rgb(77, 77, 77);
   padding-bottom: 40px;
-  margin-bottom: 70px;
+  margin-bottom: 30px 0 70px;
 }
 /* newscontents */
- .container h2 {
+section h2{
   margin-top: 30px;
-  text-align: center;
+  padding-left: 13px;
+  border-left: 4px solid #000;
 }
  .container p {
   padding-bottom: 20px;
@@ -77,7 +79,7 @@ footer p {
   height: 100%;
 }
 .news1 h1,.news2 h1 {
-  padding-top: 40px;
+  padding: 40px 0 10px;
   text-align: center;
 }
 .news1 p {
@@ -88,10 +90,6 @@ footer p {
   display: block;
   margin: 0 auto;
   height: 70%;
-}
-.news2 h2{
-  padding-left: 5px;
-  border-left: 4px solid #000;
 }
 .news2 img{
   display: block;
